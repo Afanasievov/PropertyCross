@@ -1,0 +1,6 @@
+PropertyCross Application
+The application uses the Nestoria API to search properties by place-name or postcode.
+The application has 3 pages:
+(1) Search Page,
+(2) Search Results Page,
+(3) Property Listing Page.

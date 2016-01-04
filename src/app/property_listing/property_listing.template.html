@@ -1,0 +1,12 @@
+<button ng-click="onButtonClick()">< Back</button>
+
+<h1>Property Listing Page</h1>
+
+<div ng-if="data">
+    <div class="title">Title: {{data.title}}</div>
+    <img ng-src="{{data.img_url}}"/>
+    <div>Price: {{data.price}}: {{data.price_currency}}</div>
+    <div>Bedrooms: {{data.bedroom_number}}</div>
+    <div>Bathrooms: {{data.bathrooms_number}}</div>
+    <div>Summary: {{data.summary}}</div>
+</div>

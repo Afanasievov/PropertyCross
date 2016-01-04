@@ -1,0 +1,20 @@
+<button ng-click="onButtonClick()">< Back</button>
+
+<h1>Search Results Page</h1>
+
+<div class="error" ng-if="data.searchError">
+    {{data.results.response.application_response_text}}
+</div>
+
+<div ng-if="data.results.listings">
+    {{data.results.response.listings.length}} of {{data.results.response.total_results}}
+</div>
+
+<div ng-repeat="item in data.results.response.listings"
+     ng-click="onPropertyClick(item)"
+     class="result">
+    <img class="thumb" ng-src="{{item.thumb_url}}"/>
+    <div class="title">Title: {{item.title}}</div>
+    <div>Price: {{item.price}}: {{item.price_currency}}</div>
+    <div>Summary: <span ng-bind="item.summary"></span></div>
+</div>
